@@ -19,7 +19,7 @@ public class Medicamento {
 
     }
 
-    public Medicamento(String nombre, double precio, int seleccionado, int comprado, String farmacia) {
+    public Medicamento(String nombre, double precio, String farmacia, int seleccionado, int comprado) {
         this.nombre = nombre;
         this.precio = precio;
         this.seleccionado = seleccionado;

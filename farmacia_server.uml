@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>dsss.practica4.farmacia_server</OriginalElement>
+  <nodes>
+    <node x="79.58035714285714" y="1210.0">dsss.practica4.farmacia_server.services.UserService</node>
+    <node x="389.4761904761904" y="667.0">dsss.practica4.farmacia_server.controlador.MedicamentoController</node>
+    <node x="386.7053571428571" y="1234.0">dsss.practica4.farmacia_server.repositories.UsuariRepositorio</node>
+    <node x="1151.6607142857142" y="487.0">dsss.practica4.farmacia_server.services.FarmaciaServiceImpl</node>
+    <node x="0.0" y="1339.0">dsss.practica4.farmacia_server.controlador.UserController</node>
+    <node x="251.5833333333333" y="0.0">dsss.practica4.farmacia_server.model.Medicamento</node>
+    <node x="671.1130952380952" y="912.0">dsss.practica4.farmacia_server.FarmaciaServerApplication</node>
+    <node x="13.476190476190425" y="679.0">dsss.practica4.farmacia_server.services.MedicamentoServiceImpl</node>
+    <node x="218.39285714285714" y="912.0">dsss.practica4.farmacia_server.model.Usuario</node>
+    <node x="812.4761904761904" y="475.0">dsss.practica4.farmacia_server.controlador.FarmaciaController</node>
+    <node x="902.4494047619046" y="370.0">dsss.practica4.farmacia_server.services.FarmaciaService</node>
+    <node x="1039.4494047619046" y="0.0">dsss.practica4.farmacia_server.model.Farmacia</node>
+    <node x="0.0" y="526.0">dsss.practica4.farmacia_server.repositories.MedicamentoRepositorio</node>
+    <node x="303.33333333333326" y="466.0">dsss.practica4.farmacia_server.services.MedicamentoService</node>
+    <node x="1206.6785714285713" y="382.0">dsss.practica4.farmacia_server.repositories.FarmaciaRepositorio</node>
+    <node x="307.11309523809524" y="1351.0">dsss.practica4.farmacia_server.services.UserServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="dsss.practica4.farmacia_server.controlador.UserController" target="dsss.practica4.farmacia_server.services.UserService">
+      <point x="92.0" y="-64.0" />
+      <point x="230.0" y="1314.0" />
+      <point x="215.08035714285714" y="1314.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.controlador.MedicamentoController" target="dsss.practica4.farmacia_server.model.Medicamento">
+      <point x="126.0" y="-100.0" />
+      <point x="704.4761904761904" y="642.0" />
+      <point x="669.8333333333333" y="642.0" />
+      <point x="669.8333333333333" y="436.0" />
+      <point x="463.33333333333326" y="436.0" />
+      <point x="90.75" y="208.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.FarmaciaServiceImpl" target="dsss.practica4.farmacia_server.services.FarmaciaService">
+      <point x="-109.125" y="-40.0" />
+      <point x="1188.0357142857142" y="450.0" />
+      <point x="1130.7827380952378" y="450.0" />
+      <point x="91.33333333333326" y="27.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.controlador.MedicamentoController" target="dsss.practica4.farmacia_server.services.MedicamentoService">
+      <point x="0.0" y="-100.0" />
+      <point x="578.4761904761904" y="642.0" />
+      <point x="600.0" y="642.0" />
+      <point x="118.66666666666669" y="75.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.MedicamentoServiceImpl" target="dsss.practica4.farmacia_server.model.Medicamento">
+      <point x="44.5" y="-88.0" />
+      <point x="235.97619047619042" y="642.0" />
+      <point x="232.49999999999997" y="642.0" />
+      <point x="232.49999999999997" y="446.0" />
+      <point x="342.33333333333326" y="446.0" />
+      <point x="-30.25" y="208.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.UserService" target="dsss.practica4.farmacia_server.model.Usuario">
+      <point x="0.0" y="-39.5" />
+      <point x="215.08035714285714" y="1190.0" />
+      <point x="309.1428571428571" y="1190.0" />
+      <point x="-30.25" y="124.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.controlador.FarmaciaController" target="dsss.practica4.farmacia_server.model.Farmacia">
+      <point x="-97.33333333333326" y="-52.0" />
+      <point x="861.1428571428571" y="450.0" />
+      <point x="891.9494047619046" y="450.0" />
+      <point x="891.9494047619046" y="340.0" />
+      <point x="1070.9494047619046" y="340.0" />
+      <point x="-94.5" y="160.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.FarmaciaServiceImpl" target="dsss.practica4.farmacia_server.model.Farmacia">
+      <point x="109.125" y="-40.0" />
+      <point x="1407.1785714285713" y="340.0" />
+      <point x="1259.9494047619046" y="340.0" />
+      <point x="94.5" y="160.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.controlador.UserController" target="dsss.practica4.farmacia_server.model.Usuario">
+      <point x="-92.0" y="-64.0" />
+      <point x="46.0" y="1314.0" />
+      <point x="69.08035714285711" y="1314.0" />
+      <point x="69.08035714285711" y="1180.0" />
+      <point x="248.64285714285714" y="1180.0" />
+      <point x="-90.75" y="124.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.controlador.FarmaciaController" target="dsss.practica4.farmacia_server.services.FarmaciaService">
+      <point x="97.33333333333326" y="-52.0" />
+      <point x="1055.8095238095236" y="450.0" />
+      <point x="1039.4494047619046" y="450.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.MedicamentoServiceImpl" target="dsss.practica4.farmacia_server.services.MedicamentoService">
+      <point x="133.5" y="-88.0" />
+      <point x="324.9761904761904" y="642.0" />
+      <point x="362.66666666666663" y="642.0" />
+      <point x="-118.66666666666669" y="75.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.FarmaciaServiceImpl" target="dsss.practica4.farmacia_server.repositories.FarmaciaRepositorio">
+      <point x="36.375" y="-40.0" />
+      <point x="1333.5357142857142" y="450.0" />
+      <point x="1349.1785714285713" y="450.0" />
+      <point x="47.5" y="15.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.FarmaciaService" target="dsss.practica4.farmacia_server.model.Farmacia">
+      <point x="0.0" y="-27.5" />
+      <point x="1039.4494047619046" y="350.0" />
+      <point x="1133.9494047619046" y="350.0" />
+      <point x="-31.5" y="160.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.MedicamentoServiceImpl" target="dsss.practica4.farmacia_server.repositories.MedicamentoRepositorio">
+      <point x="-133.5" y="-88.0" />
+      <point x="57.976190476190425" y="642.0" />
+      <point x="55.5" y="642.0" />
+      <point x="-55.5" y="15.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.repositories.UsuariRepositorio" target="dsss.practica4.farmacia_server.model.Usuario">
+      <point x="0.0" y="-15.5" />
+      <point x="472.7053571428571" y="1190.0" />
+      <point x="369.6428571428571" y="1190.0" />
+      <point x="30.25" y="124.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.UserServiceImpl" target="dsss.practica4.farmacia_server.services.UserService">
+      <point x="-119.625" y="-52.0" />
+      <point x="346.98809523809524" y="1314.0" />
+      <point x="305.4136904761905" y="1314.0" />
+      <point x="90.33333333333331" y="39.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.UserServiceImpl" target="dsss.practica4.farmacia_server.model.Usuario">
+      <point x="119.625" y="-52.0" />
+      <point x="586.2380952380952" y="1314.0" />
+      <point x="569.2053571428571" y="1314.0" />
+      <point x="569.2053571428571" y="1180.0" />
+      <point x="430.1428571428571" y="1180.0" />
+      <point x="90.75" y="124.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.MedicamentoService" target="dsss.practica4.farmacia_server.model.Medicamento">
+      <point x="0.0" y="-75.5" />
+      <point x="481.33333333333326" y="446.0" />
+      <point x="402.83333333333326" y="446.0" />
+      <point x="30.25" y="208.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.services.UserServiceImpl" target="dsss.practica4.farmacia_server.repositories.UsuariRepositorio">
+      <point x="39.875" y="-52.0" />
+      <point x="506.48809523809524" y="1314.0" />
+      <point x="515.7053571428571" y="1314.0" />
+      <point x="43.0" y="15.5" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.repositories.MedicamentoRepositorio" target="dsss.practica4.farmacia_server.model.Medicamento">
+      <point x="0.0" y="-15.5" />
+      <point x="111.0" y="436.0" />
+      <point x="281.83333333333326" y="436.0" />
+      <point x="-90.75" y="208.0" />
+    </edge>
+    <edge source="dsss.practica4.farmacia_server.repositories.FarmaciaRepositorio" target="dsss.practica4.farmacia_server.model.Farmacia">
+      <point x="0.0" y="-15.5" />
+      <point x="1301.6785714285713" y="350.0" />
+      <point x="1196.9494047619046" y="350.0" />
+      <point x="31.5" y="160.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9671822461331538" x="464.39681546377426" y="259.6784174662773" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

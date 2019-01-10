@@ -11,17 +11,12 @@ public class Farmacia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String nombre;
     private String etiqueta;
     private double latitude;
     private double longitude;
 
     public Farmacia(){}
-
-    public Farmacia(String etiqueta, double latitude, double longitude) {
-        this.etiqueta = etiqueta;
-        this.latitude = latitude;
-        this.longitude = longitude;
-    }
 
 
     public Long getId() {
@@ -31,6 +26,10 @@ public class Farmacia {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public String getNombre() { return nombre; }
+
+    public void setNombre(String nombre) { this.nombre = nombre;}
 
     public String getEtiqueta() {
         return etiqueta;
