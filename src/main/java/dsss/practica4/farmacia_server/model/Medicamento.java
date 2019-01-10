@@ -1,8 +1,6 @@
 package dsss.practica4.farmacia_server.model;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity(name="medicamentos")
 public class Medicamento {
@@ -14,22 +12,19 @@ public class Medicamento {
     private double precio;
     private int seleccionado;
     private int comprado;
-
-    @ManyToMany(fetch = FetchType.LAZY,
-            mappedBy = "medicamentos"
-    )
-    private Set<Farmacia> farmacia = new HashSet<>();
+    private String farmacia;
 
 
     public Medicamento(){
 
     }
 
-    public Medicamento(String nombre,double precio, int seleccionado, int comprado) {
+    public Medicamento(String nombre, double precio, int seleccionado, int comprado, String farmacia) {
         this.nombre = nombre;
         this.precio = precio;
         this.seleccionado = seleccionado;
         this.comprado = comprado;
+        this.farmacia = farmacia;
     }
 
     public Long getId() {
@@ -72,11 +67,4 @@ public class Medicamento {
         this.comprado = comprado;
     }
 
-    public Set<Farmacia> getFarmacia() {
-        return farmacia;
-    }
-
-    public void setFarmacia(Set<Farmacia> farmacia) {
-        this.farmacia = farmacia;
-    }
 }

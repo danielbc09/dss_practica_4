@@ -4,10 +4,7 @@ package dsss.practica4.farmacia_server.controlador;
 import dsss.practica4.farmacia_server.model.Medicamento;
 import dsss.practica4.farmacia_server.services.MedicamentoService;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
@@ -28,4 +25,27 @@ public class MedicamentoController {
         return this.medicamentoService.getAllMedicamentos();
     }
 
+    @GetMapping("{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Medicamento getMedicamentos(@PathVariable long id){
+        return this.medicamentoService.getMedicamentoById(id);
+    }
+
+    @PutMapping("/seleccionar/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Medicamento seleccionarMedicamento(@PathVariable long id){
+        return medicamentoService.selectMed(id);
+    }
+
+    @PutMapping("/comprar/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Medicamento comprarMedicamento(@PathVariable long id){
+        return medicamentoService.buyMed(id);
+    }
+
+    @PutMapping("{id}")
+    @ResponseStatus
+    public Medicamento actualizarMedicamento(@PathVariable long id){
+        return medicamentoService.updateService(id);
+    }
 }

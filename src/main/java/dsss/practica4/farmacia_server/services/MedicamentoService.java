@@ -8,4 +8,12 @@ import java.util.Set;
 @Service
 public interface MedicamentoService {
     Set<Medicamento> getAllMedicamentos();
+
+    Medicamento updateService(long id);
+
+    Medicamento getMedicamentoById(long id);
+
+    Medicamento selectMed(long id);
+
+    Medicamento buyMed(long id);
 }

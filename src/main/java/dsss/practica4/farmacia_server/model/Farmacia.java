@@ -15,12 +15,6 @@ public class Farmacia {
     private double latitude;
     private double longitude;
 
-    @ManyToMany( fetch = FetchType.LAZY)
-    @JoinTable(name = "farmac_medic",
-            joinColumns = { @JoinColumn(name = "farmacia_id") },
-            inverseJoinColumns = { @JoinColumn(name = "med_id") })
-    private Set<Medicamento> medicamentos = new HashSet<>();
-
     public Farmacia(){}
 
     public Farmacia(String etiqueta, double latitude, double longitude) {
@@ -62,11 +56,4 @@ public class Farmacia {
         this.longitude = longitude;
     }
 
-    public Set<Medicamento> getMedicamentos() {
-        return medicamentos;
-    }
-
-    public void setMedicamentos(Set<Medicamento> medicamentos) {
-        this.medicamentos = medicamentos;
-    }
 }
